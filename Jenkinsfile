@@ -16,6 +16,6 @@
 
 env.COMPONENT="cart"
 env.APP_TYPE='nodejs'
-env.TAG_NAME='cart1.0'
+TAG_NAME=1.0.0
 
 nodejs()
