@@ -1,19 +1,18 @@
 
-#trigger:
-#  - main
-#
-#pool: docker
-#steps:
-#  - script: npm install
-#    displayName: 'Download Nodejs Dependencies'
-#
-#  - script: docker build -t cart .
-#    displayName: 'Docker Build'
-
-
-
 trigger:
-  - main
+ - main
+
+pool: docker
+steps:
+ - script: npm install
+   displayName: 'Download Nodejs Dependencies'
+
+ - script: docker build -t cart .
+   displayName: 'Docker Build'
+
+
+
+
 
 
 
